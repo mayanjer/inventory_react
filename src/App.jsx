@@ -9,10 +9,7 @@ import MainPage from './components/NavBar'
 function App() {
   return (
     <>
-      <MainPage/>
-      
-      
-      
+      <MainPage/>   
     </>
   )
 }
