@@ -5,14 +5,18 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Dashboard from "./routes/Dashboard.jsx";
-import RootComponent from "./components/RootComponent.jsx";
+import Inventory from "./routes/Inventory.jsx";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />,
-    
+    element: <Dashboard />, 
   },
+  {
+    path: "/inventory",
+    element: <Inventory/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(

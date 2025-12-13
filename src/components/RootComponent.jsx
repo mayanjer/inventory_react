@@ -4,7 +4,7 @@ function RootComponent() {
   return (
     <>
       <div className={classes}>
-        <NavBar/>
+        <NavBar />
       </div>
     </>
   );
