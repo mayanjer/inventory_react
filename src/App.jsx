@@ -6,27 +6,16 @@ import Card from './components/Card'
 
 function App() {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const postData = {
-    email: email,
-    password: password,
-  };
-  function emailHandler(event) {
-    setEmail(event.target.value);
+  function getPostData(postData) {
+    console.log(postData)
   }
-
-  function passwordHandler(event) {
-    setPassword(event.target.value);
-  }
-
-  console.log(postData);
+  
 
   return (
     <>
-      <Form onEmailChange={emailHandler} onPasswordChange={ passwordHandler} />
-      <Card email={ email} password = {password} />
+      <Form data={ getPostData } />
+      <Card  />
+      <Card />
     </>
   );
 }
