@@ -1,39 +1,26 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import {useState} from 'react'
+import { useState } from "react";
 
-function SignUpForm({data}) {
-  const [ email, setEmail ] = useState("")
-  const [ password, setPassword ] = useState("")
-  
+function SignUpForm({ data }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const postData = {
-    'email': email,
-    'password':password
-  }
+    email: email,
+    password: password,
+  };
 
   function inputHandler(event) {
     if (event.target.id === "formBasicEmail") {
-      setEmail(event.target.value)
+      setEmail(event.target.value);
     } else if (event.target.id === "formBasicPassword") {
-      setPassword(event.target.value)
+      setPassword(event.target.value);
     }
   }
   function submitHandler() {
-    data(postData)   
+    data(postData);
   }
-
-  // function emailHandler(event) {
-  //   setEmail(event.target.value)
-  // }
-
-  // function passwordHandler(event) {
-  //   setPassword(event.target.value)
-  // }
-
-  // console.log(postData)
-
-
-  
 
   return (
     <Form>
@@ -60,7 +47,7 @@ function SignUpForm({data}) {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="primary" type="submit" onClick = {submitHandler}>
+      <Button variant="primary" type="submit" onClick={submitHandler}>
         Submit
       </Button>
     </Form>
