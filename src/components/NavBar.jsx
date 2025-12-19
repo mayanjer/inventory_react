@@ -2,7 +2,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 function NavigationBar() {
   return (
-    <Navbar className="bg-light">
+    <Navbar className="bg-white mt-0 mb-2">
       <Container>
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
         <Nav className="me-auto">
