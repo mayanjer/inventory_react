@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootComponent from "./components/RootComponent";
 import Dashboard from "./routes/Dashboard.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

@@ -15,18 +15,18 @@ function Dashboard() {
       </Row>
 
       <Card />
-      <Row className="d-flex flex-wrap mt-4">
+      <Row className="d-flex mt-4">
         <Col>
-          <ShortCard />
+          <ShortCard variant="warning" cardHeader = "Total Sales"/>
         </Col>
         <Col>
-          <ShortCard />
+          <ShortCard variant = "primary" cardHeader = "Total Purchases"/>
         </Col>
         <Col>
-          <ShortCard />
+          <ShortCard variant = "success" cardHeader = "Total Expenses" />
         </Col>
         <Col>
-          <ShortCard />
+          <ShortCard variant = "primary" cardHeader = "Net Profit"/>
         </Col>
       </Row>
     </>
