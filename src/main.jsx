@@ -6,6 +6,8 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootComponent from "./components/RootComponent";
 import Dashboard from "./routes/Dashboard.jsx";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 
 const router = createBrowserRouter([

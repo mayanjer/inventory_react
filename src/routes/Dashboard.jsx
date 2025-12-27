@@ -1,6 +1,9 @@
 import Card from "../components/LongCard";
 import { Row, Col } from "react-bootstrap";
 import ShortCard from "../components/ShortCard";
+import InvoiceCard from "../components/InvoiceCard";
+import SalesPurchaseCard from "../components/Sales&PurchaseCard";
+import OverallInfoCard from "../components/OverallInformationCard";
 function Dashboard() {
   return (
     <>
@@ -17,17 +20,45 @@ function Dashboard() {
       <Card />
       <Row className="d-flex mt-4">
         <Col>
-          <ShortCard variant="warning" cardHeader = "Total Sales"/>
+          <ShortCard variant="warning" cardHeader="Total Sales" />
         </Col>
         <Col>
-          <ShortCard variant = "primary" cardHeader = "Total Purchases"/>
+          <ShortCard variant="primary" cardHeader="Total Purchases" />
         </Col>
         <Col>
-          <ShortCard variant = "success" cardHeader = "Total Expenses" />
+          <ShortCard variant="success" cardHeader="Total Expenses" />
         </Col>
         <Col>
-          <ShortCard variant = "primary" cardHeader = "Net Profit"/>
+          <ShortCard variant="primary" cardHeader="Net Profit" />
         </Col>
+      </Row>
+
+      {/* Invoice Cards and expenditure cards */}
+      <Row className="mt-4 d-flex">
+        <Col>
+          <InvoiceCard />
+        </Col>
+
+        <Col>
+          <InvoiceCard />
+        </Col>
+
+        <Col>
+          <InvoiceCard />
+        </Col>
+        <Col>
+          <InvoiceCard />
+        </Col>
+      </Row>
+
+      <Row className = "mt-4">
+        <Col>
+        <SalesPurchaseCard/>
+        </Col>
+        <Col>
+        <OverallInfoCard/>
+        </Col>
+          
       </Row>
     </>
   );
@@ -35,17 +66,4 @@ function Dashboard() {
 
 export default Dashboard;
 
-<Row>
-  <Col>
-    <ShortCard />
-  </Col>
-  <Col>
-    <ShortCard />
-  </Col>
-  <Col>
-    <ShortCard />
-  </Col>
-  <Col>
-    <ShortCard />
-  </Col>
-</Row>;
+
