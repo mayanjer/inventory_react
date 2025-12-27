@@ -1,6 +1,6 @@
 export default function SalesPurchaseCard() {
   return (
-    <div class="card flex-fill">
+    <div class="card">
       <div className="card-header d-flex justify-content-between align-items-center">
         <div className="d-inline-flex align-items-center">
           <span className="title-icon bg-soft-primary fs-16 me-2">

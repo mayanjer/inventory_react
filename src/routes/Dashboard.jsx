@@ -51,14 +51,13 @@ function Dashboard() {
         </Col>
       </Row>
 
-      <Row className = "mt-4">
-        <Col>
-        <SalesPurchaseCard/>
+      <Row className="mt-4 d-flex">
+        <Col md={8}>
+          <SalesPurchaseCard />
         </Col>
-        <Col>
-        <OverallInfoCard/>
+        <Col md={4}>
+          <OverallInfoCard />
         </Col>
-          
       </Row>
     </>
   );
