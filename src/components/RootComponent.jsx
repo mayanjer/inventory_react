@@ -3,7 +3,13 @@ import { Outlet } from "react-router-dom";
 
 function RootComponent() {
   return (
-    <div className="bg-light min-vh-100 w-100">
+    <div
+      style={{
+        backgroundColor: "var(--bs-gray-200)",
+        minHeight: "100vh",
+        width: "100%",
+      }} className="container-fluid p-0"
+    >
       <NavigationBar />
       <Outlet />
     </div>

@@ -3,18 +3,69 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 function NavigationBar() {
   return (
     <Navbar className=" sticky-top bg-white mt-0 mb-2">
-      <Container>
-        <Navbar.Brand href="#home">Main Menu</Navbar.Brand>
-        <Nav classaNme="me-auto">
-          <Nav.Link href="#home">Inventory</Nav.Link>
-          <Nav.Link href="#features">Stock</Nav.Link>
-          <Nav.Link href="#pricing">Staff</Nav.Link>
-          <Nav.Link href="#pricing">Finance</Nav.Link>
-          <Nav.Link href="#pricing">User Management</Nav.Link>
-          <Nav.Link href="#pricing">Reports</Nav.Link>
-          <Nav.Link href="#pricing">Settings</Nav.Link>
-        </Nav>
-      </Container>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link active"
+            id="nav-home-tab"
+            data-toggle="tab"
+            href="#nav-home"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Home
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            data-toggle="tab"
+            href="#nav-profile"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Profile
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
+        >
+          ...
+        </div>
+      </div>
     </Navbar>
   );
 }
