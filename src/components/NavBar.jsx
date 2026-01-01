@@ -14,7 +14,7 @@ function NavigationBar() {
             aria-controls="nav-home"
             aria-selected="true"
           >
-            Home
+            Main Menu
           </a>
           <a
             class="nav-item nav-link"
@@ -25,7 +25,7 @@ function NavigationBar() {
             aria-controls="nav-profile"
             aria-selected="false"
           >
-            Profile
+            Inventory
           </a>
           <a
             class="nav-item nav-link"
@@ -36,7 +36,73 @@ function NavigationBar() {
             aria-controls="nav-contact"
             aria-selected="false"
           >
-            Contact
+            Stock
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Sales
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Staff
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Finance
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            User Management
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Report
+          </a>
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Settings
           </a>
         </div>
       </nav>
